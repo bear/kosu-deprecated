@@ -10,12 +10,14 @@
 
 (def slack-credentials {
   :account "", :token ""})
+
 (def chat-ops
   (slack slack-credentials {
     :username "opsbot"
     :channel "#chatops"
     :icon ":smile:"}
-))
+  )
+)
 
 (def alert-ops
    (email "opsalert@example.com")
